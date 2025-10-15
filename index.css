@@ -365,26 +365,48 @@ body.light-mode .header {
 }
 
 body.light-mode .home {
-  background: url('images/light-home.jpg') no-repeat center/cover;
+  background: url('images/light-home.png') no-repeat center/cover;
 }
 
 body.light-mode .about {
-  background: url('images/light-about.jpg') no-repeat center/cover;
+  background: url('images/light-about.png') no-repeat center/cover;
 }
 
 body.light-mode .services {
-  background: url('images/light-services.jpg') no-repeat center/cover;
+  background: url('images/light-services.png') no-repeat center/cover;
 }
 
 body.light-mode .portfolio {
-  background: url('images/light-portfolio.jpg') no-repeat center/cover;
+  background: url('images/light-portfolio.png') no-repeat center/cover;
 }
 
 body.light-mode .contact {
-  background: url('images/light-contact.jpg') no-repeat center/cover;
+  background: url('images/light-contact.png') no-repeat center/cover;
 }
 
-/* Smooth fade transition between modes */
 body, .header, section {
   transition: background 0.5s ease, color 0.5s ease;
+}
+
+body.light-mode .header {
+  background-color: rgba(227, 248, 255, 0.95);
+}
+
+body.light-mode .logo {
+  color: #081b29;
+}
+
+body.light-mode .navbar a {
+  color: #081b29;
+}
+  
+body.light-mode .navbar a:hover {
+  color: #00abf0;
+}
+
+
+body.light-mode #mode-toggle {
+  background-color: #081b29;
+  color: #fff;
+  border: 2px solid #081b29;
 }
