@@ -306,3 +306,85 @@ section{
     align-items: center;
   }
 }
+
+/* 🌙 DARK/LIGHT MODE TOGGLE BUTTON */
+#mode-toggle {
+  padding: 8px 15px;
+  margin-left: 20px;
+  background-color: #00abf0;
+  color: #081b29;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#mode-toggle:hover {
+  background-color: transparent;
+  color: #00abf0;
+  border: 2px solid #00abf0;
+}
+
+/* 🌙 DARK MODE */
+body.dark-mode {
+  color: #ededed;
+}
+
+body.dark-mode .header {
+  background-color: #081b29;
+}
+
+body.dark-mode .home {
+  background: url('images/home-bg.jpg') no-repeat center/cover;
+}
+
+body.dark-mode .about {
+  background: url('images/home-bg2.jpg') no-repeat center/cover;
+}
+
+body.dark-mode .services {
+  background: url('images/home-bg3.jpg') no-repeat center/cover;
+}
+
+body.dark-mode .portfolio {
+  background: url('images/home-bg4.jpg') no-repeat center/cover;
+}
+
+body.dark-mode .contact {
+  background: url('images/home-bg5.jpg') no-repeat center/cover;
+}
+
+/* 🌞 LIGHT MODE */
+body.light-mode {
+  color: #081b29;
+}
+
+body.light-mode .header {
+  background-color: #e3f8ff;
+}
+
+body.light-mode .home {
+  background: url('images/light-home.jpg') no-repeat center/cover;
+}
+
+body.light-mode .about {
+  background: url('images/light-about.jpg') no-repeat center/cover;
+}
+
+body.light-mode .services {
+  background: url('images/light-services.jpg') no-repeat center/cover;
+}
+
+body.light-mode .portfolio {
+  background: url('images/light-portfolio.jpg') no-repeat center/cover;
+}
+
+body.light-mode .contact {
+  background: url('images/light-contact.jpg') no-repeat center/cover;
+}
+
+/* Smooth fade transition between modes */
+body, .header, section {
+  transition: background 0.5s ease, color 0.5s ease;
+}
